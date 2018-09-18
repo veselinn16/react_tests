@@ -1,3 +1,4 @@
+import { debounce } from 'lodash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import SearchBar from './components/searchBar';
@@ -33,9 +34,12 @@ class App extends Component {
     }
 
     render () {
+        // Debounced version of function to call when user types in input
+        const videoSearch = debounce(term => { this.videoSearch(term) }, 300);
+
         return (
             <div>
-              <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
+              <SearchBar onSearchTermChange={videoSearch} />
               <VideoDetail video={this.state.selectedVid} />
               <VideoList 
                 onVideoSelect={selectedVid => this.setState({selectedVid})}
