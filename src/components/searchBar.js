@@ -2,15 +2,20 @@ import React, { Component } from 'react';
 
 class SearchBar extends Component {
     state = {
-        query: ''
+        term: ''
+    }
+
+    onInputChange = term => {
+        this.setState({term});
+        this.props.onSearchTermChange(term);
     }
 
     render() {
         return (
-            <div>
+            <div className="search-bar">
                 <input 
                 value={this.state.query}
-                onChange={e => this.setState({query: e.target.value})} />
+                onChange={e => this.onInputChange(e.target.value)} />
             </div>
         );
     } 
