@@ -95,15 +95,38 @@ body {
 
 .video__list-item {
     height: 20%;
+    position: relative;
 }
 
-.video__list-item:hover {
-    background: #5776b7;
+.video__list-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #5776b7;
+    transform: scaleY(0);
+    transition: transform .2s, width .4s cubic-bezier(1,0,0,1) .2s, background-color .1s;
+}
+
+.video__list-item:hover::before, .video__list-item--active::before {
+    transform: scaleY(1);
+    width: 100%;
+}
+
+.video__list-item:active::before {
+    background-color: #5776b7;
+}
+
+.video__list-item--thumb {
+    z-index: 10;
 }
 
 .video__list-item--title {
     font-size: 2rem;
     padding: 1rem;
+    z-index: 10;
 }
 
 .video__frame {
