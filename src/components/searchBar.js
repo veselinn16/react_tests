@@ -13,10 +13,17 @@ class SearchBar extends Component {
     render() {
         return (
             <div className="header">
-                <input 
-                className="search"
-                value={this.state.query}
-                onChange={e => this.onInputChange(e.target.value)} />
+                <div className="search__container">
+                    <input 
+                    className="search"
+                    value={this.state.query}
+                    onChange={e => this.onInputChange(e.target.value)} 
+                    placeholder="Search Videos" />
+                    <button className="search__button" />
+                    <svg className="search__icon">
+                        <use xlinkHref="img/sprite.svg#icon-magnifying-glass" />
+                    </svg>
+                </div>
             </div>
         );
     } 
