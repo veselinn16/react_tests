@@ -36,6 +36,7 @@ html {
 
 body {
     background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+    font-family: Krub, sans-serif;
 }
 
 #root {
@@ -112,6 +113,7 @@ body {
     border-radius: 10rem;
     border: none;
     font-size: 2rem;
+    font-family: inherit;
     padding: .8rem 1.5rem;
     transition: all .2s;
     margin-right: -3.5rem;
