@@ -13,9 +13,16 @@ const videoList = props => {
         )
     })
     return (
-        <ul className="videos__list">
-            {videoItems}
-        </ul>
+        <div className="sidebar">
+            <ul className="videos__list">
+                {videoItems}
+            </ul>
+            <footer className="footer">
+                Copyright &copy; 2018 Veselin Tonev. <br/>
+                All rights reserved.
+            </footer>
+        </div>
+        
     )
 }
 
