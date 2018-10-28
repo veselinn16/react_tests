@@ -51,7 +51,6 @@ body {
     width: 100%;
     height: 100%;
     margin: auto;
-    /* background: coral; */
     display: flex;
     flex-direction: column;
 }
@@ -79,7 +78,21 @@ body {
 }
 
 .video__details {
-    /* background: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    color: #fff;
+}
+
+.video__title {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.video__description {
+    font-size: 1.5rem;
+    width: 70%;
 }
 
 .videos__list {
