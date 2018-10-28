@@ -63,6 +63,7 @@ body {
     /* background: green; */
     padding: 1rem;
     background-color:var(--color-primary-light);
+    border-top-left-radius: 5rem;
 }
 
 .content {
@@ -77,6 +78,7 @@ body {
     align-content: center;
     background-color: #3b3a58;
     color: #fff;
+    border-bottom-right-radius: 5rem;
 }
 
 .video__container {
