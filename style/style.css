@@ -53,6 +53,9 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
+    box-shadow: var(--shadow-dark);
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
 }
 
 .header {
