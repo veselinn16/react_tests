@@ -43,6 +43,11 @@
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
+::selection {
+    background: #fff;
+    color: cornflowerblue;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;  /* 1rem = 10px, 10px : 16px = 62.5% */
