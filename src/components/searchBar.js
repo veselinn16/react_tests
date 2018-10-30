@@ -19,7 +19,7 @@ class SearchBar extends Component {
                     value={this.state.query}
                     onChange={e => this.onInputChange(e.target.value)} 
                     placeholder="Search Videos" />
-                    <button className="search__button" />
+                    {/* <button className="search__button" /> */}
                     <svg className="search__icon">
                         <use xlinkHref="img/sprite.svg#icon-magnifying-glass" />
                     </svg>
