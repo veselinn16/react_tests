@@ -13,6 +13,9 @@ class SearchBar extends Component {
     render() {
         return (
             <div className="header">
+                <div className="title">
+                    <h1 className="logo">VidSearch</h1>
+                </div>
                 <div className="search__container">
                     <input 
                     className="search"
