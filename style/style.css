@@ -53,6 +53,12 @@ html {
     font-size: 62.5%;  /* 1rem = 10px, 10px : 16px = 62.5% */
 }
 
+@media only screen and (min-width: 112.5em) {
+    html {
+        font-size: 75%;
+    }
+}
+
 body {
     /* background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)); */
     background: cornflowerblue;
@@ -80,13 +86,21 @@ body {
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     height: 10%;
     /* background: green; */
     padding: 1rem;
     background-color:var(--color-primary-light);
     border-top-left-radius: 5rem;
+}
+
+.title {
+
+}
+
+.logo {
+
 }
 
 .content {
