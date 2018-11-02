@@ -35,7 +35,7 @@ class App extends Component {
 
     render () {
         // Debounced version of function to call when user types in input
-        const videoSearch = debounce(term => { this.videoSearch(term) }, 300);
+        const videoSearch = debounce(term => { this.videoSearch(term) }, 400);
 
         return (
             <div className="app">
