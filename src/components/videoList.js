@@ -18,7 +18,7 @@ const videoList = props => {
                 {videoItems}
             </ul>
             <footer className="footer">
-                Copyright &copy; 2018 <span id="developer">Veselin Tonev</span>. <br/>
+                Copyright &copy; 2018 <span id="developer">VESELIN TONEV</span>. <br/>
                 All rights reserved.
             </footer>
         </div>
