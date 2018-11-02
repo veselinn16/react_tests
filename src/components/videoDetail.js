@@ -1,5 +1,4 @@
 import React from 'react';
-import videoList from './videoList';
 
 const VideoDetail = ({ video }) => {
     if(!video) return <div>Loading...</div>;
