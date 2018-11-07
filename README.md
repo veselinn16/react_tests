@@ -1,7 +1,7 @@
-# React Video App
+# vidSearch
 
 ## Description
-YouTube-esque app to search the YouTube video database and watch videos.
+A YouTube-esque app to search the YouTube video database and watch videos.
 
 ## Development Notes
 The app is built with React and uses the YouTube Data API v3
